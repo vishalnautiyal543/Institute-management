@@ -1,10 +1,14 @@
 import {app} from "./app.js"
 import {connectDB} from "./db/db.js"
 import dotenv from "dotenv"
+import {seedAdmin} from "./utils/seedAdmin.js"
 
 
-dotenv.config()
+dotenv.config({path:"./.env"})
 
+
+
+seedAdmin();
 
 
 connectDB()

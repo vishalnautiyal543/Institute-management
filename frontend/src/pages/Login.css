@@ -1,0 +1,63 @@
+.login_container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://cdn.vectorstock.com/i/500p/39/78/futuristic-blue-grid-background-vector-34863978.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.login_container .login_form{
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    height: 350px;
+    background: white;
+    box-shadow: 0px 4px 100px rgb(7, 37, 206);
+}
+
+.form_con .login_form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_container .login_form h3{
+    font-size: 24px;
+}
+
+.login_container .login_form input{
+    margin: 10px 0;
+    width: 260px;
+    padding: 7px 5px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.login_container .login_form button{
+    width: 260px;
+    padding: 7px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+    .login_form{
+        width: 100%;
+    }
+
+    .login_container .login_form input{
+        margin: 10px 0;
+        width: auto;
+    
+    }
+
+    .login_container .login_form button{
+        width: 215px;
+        
+    }
+
+}

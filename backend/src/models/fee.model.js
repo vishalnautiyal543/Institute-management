@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { feeSchema } from "./feeSchema";
+
 
 
 const feeSchema = new Schema({
@@ -9,14 +9,16 @@ const feeSchema = new Schema({
     },
     totalFee:{
         type:Number,
+        default:0
     },
     paidAmount:{
          type:Number,
+         default:0
     },
     remainingFee:{
          type:Number,
     },
-      payments: [              
+    payments: [              
     {
       amount: Number,
       date: Date,
@@ -24,7 +26,10 @@ const feeSchema = new Schema({
     }
   ],
   
-  status: String,
+  status: {
+   type: String,
+   default:"due"
+  },
 
 })
 

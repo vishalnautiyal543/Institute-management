@@ -14,7 +14,7 @@ const studentSchema = new mongoose.Schema({
         type:String,
         required:true,
         min:[6,"Password must be at least 6 characters long"],
-        max:[20,"Password must be less than 20 characters long"]
+        max:[20,"Password must be less than 20 characters long"],
     },
     role:{
         type:String,
@@ -28,11 +28,9 @@ const studentSchema = new mongoose.Schema({
     },
     mobileNumber:{
         type: String,
-        required: true
     },
     address:{
         type: String,
-        required: true
     },
     avatar:{
         type: String,
